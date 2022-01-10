@@ -1,5 +1,4 @@
 package com.arilsondev.model;
-
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
 import lombok.AllArgsConstructor;
@@ -12,7 +11,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Data
 @DynamoDBDocument
-public class Product implements Serializable {
+public class Product implements Serializable{
 
     @DynamoDBAttribute
     private Integer productId;

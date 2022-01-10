@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class OrderRepository {
 
-    private DynamoDBMapper dynamoDBMapper;
+    private final DynamoDBMapper dynamoDBMapper;
 
     public OrderRepository(DynamoDBMapper dynamoDBMapper) {
         this.dynamoDBMapper = dynamoDBMapper;
@@ -18,7 +18,7 @@ public class OrderRepository {
         return order;
     }
 
-    public Order getOrderById (String orderId) {
+    public Order getOrderById(String orderId) {
         Order order = null;
         try {
             order = dynamoDBMapper.load(Order.class, orderId);

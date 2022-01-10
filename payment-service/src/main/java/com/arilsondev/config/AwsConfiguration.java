@@ -21,7 +21,7 @@ public class AwsConfiguration {
     @Value("${cloud.aws.region.static}")
     private String region;
 
-    @Bean
+    @Bean()
     public DynamoDBMapper dynamoDBMapper() {
         return new DynamoDBMapper(build());
     }

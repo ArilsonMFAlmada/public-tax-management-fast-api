@@ -1,6 +1,8 @@
 package com.arilsondev.model;
 
-public enum OrderState {
+import java.io.Serializable;
+
+public enum OrderState implements Serializable {
     ORDER_PAID,
     ORDER_PREPARED,
     ORDER_DELIVERED,

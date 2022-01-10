@@ -1,5 +1,6 @@
 package com.arilsondev.publisher;
 
+import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.arilsondev.model.OrderStatus;
 import com.arilsondev.model.Payment;
 import io.awspring.cloud.messaging.core.QueueMessagingTemplate;
@@ -10,8 +11,8 @@ public class PaymentPublisher {
 
     private QueueMessagingTemplate queueMessagingTemplate;
 
-    public PaymentPublisher(QueueMessagingTemplate queueMessagingTemplate) {
-        this.queueMessagingTemplate = queueMessagingTemplate;
+    public PaymentPublisher(AmazonSQSAsync amazonSQSAsync) {
+        this.queueMessagingTemplate = new QueueMessagingTemplate(amazonSQSAsync);
     }
 
     public void publish(Payment payment) {

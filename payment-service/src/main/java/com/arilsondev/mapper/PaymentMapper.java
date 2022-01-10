@@ -1,7 +1,6 @@
 package com.arilsondev.mapper;
 
-import com.arilsondev.model.Order;
-import com.arilsondev.model.Payment;
+import com.arilsondev.model.*;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,6 +14,7 @@ public class PaymentMapper {
                 .sellerId(orderResponse.getSellerId())
                 .paymentMethod(orderResponse.getPaymentMethod())
                 .paymentStatus("SUCCESS")
+                .paymentStatusNotes("Successfully paid by " + orderResponse.getPaymentMethod())
                 .build();
     }
 }

@@ -1,0 +1,7 @@
+com/arilsondev/repository/OrderRepository.class
+com/arilsondev/OrderServiceApplication.class
+com/arilsondev/service/OrderServiceImpl.class
+com/arilsondev/consumer/OrderConsumer.class
+com/arilsondev/mapper/OrderMapper.class
+com/arilsondev/publisher/OrderPublisher.class
+com/arilsondev/config/AwsConfiguration.class

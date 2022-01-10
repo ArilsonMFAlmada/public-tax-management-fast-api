@@ -1,9 +1,9 @@
 package com.arilsondev.service;
 
 import com.arilsondev.mapper.OrderMapper;
-import com.arilsondev.model.Order;
 import com.arilsondev.publisher.OrderPublisher;
 import com.arilsondev.repository.OrderRepository;
+import com.arilsondev.model.Order;
 import com.arilsondev.shared.CreateOrderRequest;
 import com.arilsondev.shared.GetOrderRequest;
 import com.arilsondev.shared.OrderResponse;
