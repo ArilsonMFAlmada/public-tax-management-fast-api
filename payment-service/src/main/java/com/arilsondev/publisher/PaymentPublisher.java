@@ -17,11 +17,11 @@ public class PaymentPublisher {
 
     public void publish(Payment payment) {
         System.out.println("Publishing paymentId: " +payment.getPaymentId());
-        queueMessagingTemplate.convertAndSend("restaurant-updates", payment);
+        queueMessagingTemplate.convertAndSend("https://sqs.us-east-1.amazonaws.com/618830971158/restaurant-updates", payment);
     }
 
     public void publish(OrderStatus orderStatus) {
         System.out.println("Publishing orderStatus: " +orderStatus.getOrderId());
-        queueMessagingTemplate.convertAndSend("order-updates", orderStatus);
+        queueMessagingTemplate.convertAndSend("https://sqs.us-east-1.amazonaws.com/618830971158/order-updates", orderStatus);
     }
 }

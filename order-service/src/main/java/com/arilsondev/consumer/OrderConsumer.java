@@ -17,7 +17,7 @@ public class OrderConsumer {
         this.orderRepository = orderRepository;
     }
 
-    @SqsListener("payment-updates")
+    @SqsListener("https://sqs.us-east-1.amazonaws.com/618830971158/order-updates")
     public void consume(OrderStatus orderStatus) {
         System.out.println("Received order status for orderId... " + orderStatus.getOrderId());
         Order order = orderRepository.getOrderById(orderStatus.getOrderId());

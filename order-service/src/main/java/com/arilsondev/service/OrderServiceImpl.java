@@ -21,7 +21,8 @@ public class OrderServiceImpl extends OrderServiceGrpc.OrderServiceImplBase {
     @Autowired
     private OrderRepository orderRepository;
 
-    private OrderPublisher orderPublisher;
+    @Autowired
+    OrderPublisher orderPublisher;
 
     @Override
     public void createOrder(CreateOrderRequest request, StreamObserver<OrderResponse> responseObserver) {
