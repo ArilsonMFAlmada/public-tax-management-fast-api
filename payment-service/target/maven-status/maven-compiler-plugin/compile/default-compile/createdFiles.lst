@@ -1,7 +1,0 @@
-com/arilsondev/mapper/PaymentMapper.class
-com/arilsondev/service/PaymentService.class
-com/arilsondev/publisher/PaymentPublisher.class
-com/arilsondev/consumer/PaymentConsumer.class
-com/arilsondev/repository/PaymentRepository.class
-com/arilsondev/PaymentServiceApplication.class
-com/arilsondev/config/AwsConfiguration.class
