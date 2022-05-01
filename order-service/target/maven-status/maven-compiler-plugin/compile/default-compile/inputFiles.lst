@@ -1,7 +1,0 @@
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/service/OrderServiceImpl.java
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/repository/OrderRepository.java
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/consumer/OrderConsumer.java
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/OrderServiceApplication.java
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/publisher/OrderPublisher.java
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/config/AwsConfiguration.java
-/home/arilsonalmada/POC/order-service/src/main/java/com/arilsondev/mapper/OrderMapper.java
