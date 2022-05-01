@@ -11,10 +11,6 @@ db: List[Product] = [
     Product(id=UUID("068c4e3c-c775-49b8-a306-98e3a27d0e99"), productName="Feijão", productBrand="Camil", productPrice=10.00, unitMeasurement="1kg" )
 ]
 
-@app.get("/")
-async def root():
-    return {"Hello": "Mundo"}
-
 @app.get("/api/v1/products")
 async def get_products():
     return db
